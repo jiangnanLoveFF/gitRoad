@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+	<style>
+		span.success {
+			color: orange;
+			border: 1px solid green;
+		}
+		span.fail {
+			color: red;
+			border: 1px solid red;
+		}
+		.shopTable {
+			border: 1px solid blue;
+			border-collapse: collapse;
+		}
+		.shopTable td {
+			border: 1px solid green;
+		}
+	</style>
+	<!-- <script language="javascript">
+	//封装--方法
+	function firstMethod() 
+	{
+		alert("Hello JavaScript \u4e00,\u9fa5");
+	}
+	</script> -->
+	<script language="javascript" src="myScript.js"></script>
+</head>
+<body>
+	<form action="">
+		<input type="button" value="第一个按钮" onclick="alert('Hello World');">
+		<input type="button" value="第二个按钮" onclick="firstMethod();">
+		<input type="button" value="第三个按钮" onclick="secondMethod();">
+		<br /><br /><br />
+		<input type="text" id="txtNumber">
+		<input type="button" value="计算平方" onclick="getSquare();">
+		<br />
+		<input type="button" value="计算累加" onclick="getSum();">
+		文本框，录入文本，录入完毕（失去焦点），将文本框中的js替换为*
+		<input type="text" id="txtString" onblur="replaceString();">
+		<br /><br /><br />
+		<input type="text" value="1,56,400,77,21" id="txtArray">
+		<input type="button" value="翻转" onclick="operater(1);">
+		<input type="button" value="排序(按字符串排序)" onclick="operater(2);">
+		<input type="button" value="排序(按数值大小排序)" onclick="operater(3);">
+		<br><br><br>
+		<input type="button" value="得到一个随机数（3-9）" onclick="getRandom();">
+		<br><br>
+		<input type="text" value="输入3-5位小写字母" id="txtName" onblur="valiData();">
+		<br><br>
+		<input type="text" value="输入3个汉字" id="txtName1" onblur="valiData1();">
+		<br><br><br><br><br><br>
+		<input type="button" value="双色球生成"  onclick="doubleColorBall();">
+		<br><br><br>
+		<input type="button" value="模拟方法重载"  onclick="testMethod(10,20);">
+		<br><br><br>
+		<input type="button" value="1" onclick="calculater(1);">
+		<input type="button" value="2" onclick="calculater(2);">
+		<input type="button" value="3" onclick="calculater(3);">
+		<input type="button" value="+" onclick="calculater('+');">
+		<input type="button" value="-" onclick="calculater('-');">
+		<input type="button" value="=" onclick="calculater('=');">
+		<br />
+		<input type="text" id="calNum">
+		<br />
+		<input type="button" value="打开百度" onclick="testConfig();">
+		<br>
+		<br>
+		<br>
+		<input type="text" id="txtTime">
+		<input type="button" value="启动时钟" onclick="startClock();">
+		<input type="button" value="停止时钟" onclick="stopClock();">
+		<br><br><br><br>
+		<input type="button" value="5s后跳转" onclick="wait();">
+		如果想取消请点击<a href="javascript:cancelAlert();">这里</a>
+		<br><br><br><br>
+		<input type="button" value="实验修改节点" onclick="testDocument();">
+		<img src="delete.png" alt="" id="img1">
+		<p id="p1">段落文本</p>
+		<br>
+		<br>
+		<br>
+		<br>
+		Name:<input type="text" id="nameTxt" onblur="VailName();"> <span id="nameInfo">3到5个字母</span>
+		<br><br> 
+		Age&nbsp;<input type="text" id="ageTxt" onblur="VailAge();"> <span id="ageInfo">2位数字</span>
+		<br><br>
+		<input type="submit" value="保存" onclick="return vailDatas();">
+	</form>
+	<h2>购物车</h2>
+	<table class="shopTable">
+		<tr>
+			<td>价格</td>
+			<td>数量</td>
+			<td>小计</td>
+		</tr>
+		<tr>
+			<td>10.00</td>
+			<td>
+		<input type="button" value="-" onclick="sub(this);" />
+		<input type="text" value="1">
+		<input type="button" value="+" onclick="add(this);" />
+			</td>
+			<td>20.00</td>
+		</tr>
+		<tr>
+			<td>20.00</td>
+			<td>
+		<input type="button" value="-" onclick="sub(this);" />
+		<input type="text" value="1">
+		<input type="button" value="+" onclick="add(this);" />
+			</td>
+			<td>20.00</td>
+		</tr>
+		<tr>
+			<td>30.00</td>
+			<td>
+		<input type="button" value="-" onclick="sub(this);" />
+		<input type="text" value="1">
+		<input type="button" value="+" onclick="add(this);" />
+			</td>
+			<td>30.00</td>
+		</tr>
+		
+	</table>
+</body>
+</html>
