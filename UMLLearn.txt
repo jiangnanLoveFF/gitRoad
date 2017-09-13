@@ -1,0 +1,4 @@
+UML：统一建模语言
+	先安装工具：Rational Rose 2007,找了好多方法不好弄。给个链接
+	http://blog.csdn.net/zml_2015/article/details/50807150
+	工具和安装包在F：盘，软件安装在D：盘UMLTool下，license.upd是		需要在安装时导入的文件，一定要保存好。	
